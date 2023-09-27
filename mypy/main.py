@@ -1,6 +1,6 @@
 import os
 import sys
-from typing import Tuple
+from typing import tuple
 from mypy.main import main
 import mypy.modulefinder
 from mypy.version import __version__
