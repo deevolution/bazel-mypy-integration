@@ -25,8 +25,5 @@ if __name__ == '__main__':
 
     mypy.modulefinder.get_site_packages_dirs = get_site_packages_dirs
 
-    if version_tuple(__version__) < (0, 981):
-        main(None, sys.stdout, sys.stderr)
-    else:
-        # The first arg was removed
-        main(stdout=sys.stdout, stderr=sys.stderr)
+    main(None, sys.stdout, sys.stderr)
+
